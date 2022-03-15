@@ -179,38 +179,3 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     return (INT_PTR)FALSE;
 }
 
-
-bool NOT(bool e)
-{
-    return !e;
-}
-
-bool AND(bool e1, bool e2)
-{
-    return (e1 && e2);
-}
-
-bool OR(bool e1, bool e2)
-{
-    return (e1 || e2);
-}
-
-bool NAND(bool e1, bool e2)
-{
-    return !AND(e1, e2);
-}
-
-bool NOR(bool e1, bool e2)
-{
-    return !OR(e1, e2);
-}
-
-bool XNOR(bool e1, bool e2)
-{
-    return ((e1 && e2) || (!e1 && !e2));
-}
-
-bool XOR(bool e1, bool e2)
-{
-    return !XNOR(e1, e2);
-}
